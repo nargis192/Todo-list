@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    min-height:100vh;
+    width:100vw;
+    border: 2px black solid;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    height:15vh;
+    width:70vw;
+    border: 2px black solid;
+    background-color:bisque;
+    border-radius: 15px;
+    display: flex;
+    display: block;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20px;
+}
+#tudo-form{
+    height:15vh;
+    width:70vw;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#tudo-form input{
+    height:5vh;
+    width:55vw;
+    border: 2px black solid;
+    background-color:darkseagreen;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+#tudo-form button{
+    height:5vh;
+    width:7vw;
+    border: 2px black solid;
+    background-color:blueviolet;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px skyblue inset;
+    cursor: pointer;
+}
+.todos{
+    min-height:20vh;
+    width:70vw;
+    border:2px black solid;
+    background-color:bisque;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.todo{
+    height:7vh;
+    width:70vw;
+    /* border: 2px black solid; */
+    /* background-color:gray; */
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.todo-content{
+    height:90%;
+    width:70%;
+    /* border: 2px black solid; */
+    /* background-color:gray; */
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.todo-action{
+    height:90%;
+    width:23%;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.text{
+    height:5vh;
+    width:100%;
+    border: 2px black solid;
+    background-color:rgb(215, 196, 222);
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.delete{
+    height:6vh;
+    width:5vw;
+    border: 2px black solid;
+    background-color:blueviolet;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px skyblue inset;
+    cursor: pointer;
+}
+.edit{
+    height:6vh;
+    width:5vw;
+    border: 2px black solid;
+    background-color:blueviolet;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px skyblue inset;
+    cursor: pointer;
+}
+.Done {
+    height:6vh;
+    width:5vw;
+    border: 2px black solid;
+    background-color:blueviolet;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px skyblue inset;
+    cursor: pointer;
+  }
+
+@media screen and (max-width:1024px){
+    .container{
+        background-color: blue;
+    }
+    .header{
+        height:15vh;
+        width:95vw;
+    }
+    #tudo-form{
+        height:10vh;
+        width:95vw;
+    }
+    #tudo-form input{
+        height:10vh;
+        width:50vw;
+    }
+    #tudo-form button{
+        height:8vh;
+        width:30vw;
+        /* background-color: black; */
+    }
+    .todos{
+        min-height:30vh;
+        width:95vw;
+    }
+    .todo{
+        height:30vh;
+        width:90vw;
+        
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .todo-content{
+        height:90%;
+        width:100%;
+        
+    }
+    .todo-action{
+        height:90%;
+        width:60%;
+        
+    }
+    .text{
+        height:10vh;
+        width:90%;
+        margin-top: 10px;
+    }
+    .delete, .edit, .Done{
+        height:10vh;
+        width:17vw;
+    }
+    #tudo-form{
+        height:15vh;
+        width:95vw;
+    }
+    #tudo-form input{
+        height:10vh;
+        width:70vw;
+    }
+    #tudo-form button{
+        height:10vh;
+        width:15vw;
+    }
+    .todos{
+        min-height:30vh;
+        width:95vw;
+    }
+    .todo{
+        height:30vh;
+        width:90vw;
+        
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .todo-content{
+        height:90%;
+        width:100%;
+        
+    }
+    .todo-action{
+        height:90%;
+        width:60%;
+        
+    }
+    .text{
+        height:10vh;
+        width:90%;
+    }
+    .delete, .edit, .Done{
+        height:10vh;
+        width:17vw;
+    }
+} 
+@media screen and (max-width:720px){
+    .header{
+        height:15vh;
+        width:95vw;
+    }
+    #tudo-form{
+        height:15vh;
+        width:95vw;
+    }
+    #tudo-form input{
+        height:10vh;
+        width:70vw;
+    }
+    #tudo-form button{
+        height:10vh;
+        width:15vw;
+    }
+    .todos{
+        min-height:30vh;
+        width:95vw;
+    }
+    .todo{
+        height:30vh;
+        width:90vw;
+        
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .todo-content{
+        height:90%;
+        width:100%;
+        
+    }
+    .todo-action{
+        height:90%;
+        width:60%;
+        
+    }
+    .text{
+        height:10vh;
+        width:90%;
+        margin-top:10px;
+
+    }
+    .delete, .edit, .Done{
+        height:10vh;
+        width:17vw;
+    }
+    #tudo-form{
+        height:15vh;
+        width:95vw;
+    }
+    #tudo-form input{
+        height:10vh;
+        width:70vw;
+    }
+    #tudo-form button{
+        height:10vh;
+        width:15vw;
+    }
+    .todos{
+        min-height:30vh;
+        width:95vw;
+    }
+    .todo{
+        height:30vh;
+        width:90vw;
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .todo-content{
+        height:90%;
+        width:100%;
+    }
+    .todo-action{
+        height:90%;
+        width:60%;
+    }
+    .text{
+        height:10vh;
+        width:90%;
+    }
+    .delete, .edit, .Done{
+        height:10vh;
+        width:17vw;
+    }
+}
+@media screen and (max-width:480px){
+    .header{
+        height:15vh;
+        width:95vw;
+    }
+    #tudo-form{
+        height:15vh;
+        width:95vw;
+    }
+    #tudo-form input{
+        height:10vh;
+        width:70vw;
+    }
+    #tudo-form button{
+        height:10vh;
+        width:15vw;
+    }
+    .todos{
+        min-height:30vh;
+        width:95vw;
+    }
+    .todo{
+        height:30vh;
+        width:90vw;
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .todo-content{
+        height:90%;
+        width:100%;
+    }
+    .todo-action{
+        height:90%;
+        width:60%;
+    }
+    .text{
+        height:10vh;
+        width:90%;
+        margin-top:10px;
+    }
+    .delete, .edit, .Done{
+        height:10vh;
+        width:17vw;
+    }
+}
+
+
